@@ -18,7 +18,7 @@ class = object class (galaxy, star or quasar object)
 Note that the data is inbalanced. There are 584 GALAXY samples, 232 STAR samples, and 184 QSO samples.
 
 **StarSVC.py**: the python program which I run the classifier. In order:
-1. Load the data. I sample 1000 of the 100,000 rows for runtime purposes, so more accuracy and less variance can be achieved by increasing this sample.
+1. Load the data. I sample 1000 of the 100,000 rows for runtime purposes, so more accuracy and less variance can be achieved by increasing this number.
 2. Perform grid search on SVC with a radial basis function to find the optimal C and gamma parameters.
 3. Run SVC using the optimal parameters.
 4. Display confusion matrix.
